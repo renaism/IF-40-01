@@ -1,0 +1,94 @@
+﻿body {
+    color: white;
+    background-color: #001118;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+ul.header {
+    list-style-type: none;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: limegreen;
+}
+
+li.header {
+    float: left;
+}
+
+li.header a {
+    display: inline-block;
+    font-size: 24px;
+    padding: 8px 20px;
+}
+
+li.header a:hover {
+    background-color: darkgreen;
+    text-decoration: none;
+}
+
+img.header {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    height: 96px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: none;
+}
+
+table td {
+    padding: 5px;
+}
+
+table.tugasList {
+    border-collapse: separate;
+    border-spacing: 10px 20px;
+}
+
+table.tugasList td.tugasDays {
+    background-color: maroon;
+    font-size: 16px;
+    text-align: center;
+    width: 1%;
+    white-space: nowrap;
+}
+
+.tugasDaysNumber {
+    font-size: 50px;
+}
+
+table.tugasList td.tugasTask {
+    background-color: crimson;
+    vertical-align: text-top;
+    padding: 10px;
+}
+
+.tugasTaskSubject {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tugasTaskDate {
+    font-style: italic;
+}
