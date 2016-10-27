@@ -92,3 +92,9 @@ table.tugasList td.tugasTask {
 .tugasTaskDate {
     font-style: italic;
 }
+
+table.dataMahasiswa {
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 25px 0px;
+}
