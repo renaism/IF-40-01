@@ -1,4 +1,26 @@
-﻿body {
+﻿@font-face {
+    font-family: amaranth;
+    src: url('fonts/Amaranth-Regular.otf');
+}
+
+@font-face {
+    font-family: amaranth;
+    src: url('fonts/Amaranth-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: aller;
+    src: url('fonts/Aller_Rg.ttf');
+}
+
+@font-face {
+    font-family: aller;
+    src: url('fonts/Aller.ttf');
+    font-weight: bold;
+}
+
+body {
     color: white;
     background-color: #001118;
 }
@@ -16,6 +38,10 @@ a:visited {
 a:hover {
     color: white;
     text-decoration: underline;
+}
+
+h2 {
+    font-family: aller;
 }
 
 ul.header {
@@ -38,6 +64,7 @@ li.header {
 li.header a, .dropBtn {
     display: inline-block;
     font-size: 24px;
+    font-family: amaranth;
     padding: 8px 20px;
 }
 
@@ -93,6 +120,7 @@ table td {
 table.tugasList {
     border-collapse: separate;
     border-spacing: 10px 20px;
+    font-family: aller;
 }
 
 table.tugasList td.tugasDays {
@@ -129,18 +157,56 @@ table.dataMahasiswa {
 }
 
 .materiList {
-	border-collapse: separate;
-	border-spacing: 25px 50px;
+	border-collapse: collapse;
+    font-family: aller;
 }
 
-.materiList tr: first-child {
-	
+.materiList td {
+    padding: 5px 50px 5px 15px;
+}
+
+.materiList tr td:first-child {
+    border-right: 1px solid white;
 }
 
 .materiList img {
 	width: 90px;
 	padding-right: 50px;
 	
+}
+
+.homeContent {
+    display: inline-block;
+    float:left;
+    font-family: aller;
+}
+
+.homeContent img {
+    margin-top: 10px;
+}
+
+.newsFeed {
+    width: 420px;
+    background-color: #004663;
+    margin-top: 20px;
+}
+
+.newsFeedContent {
+    padding: 1px 15px 1px 15px;
+}
+
+.galleryContent {
+    display: inline-block;
+    float: left;
+    width: 320px;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: aller;
+}
+
+.galleryContent img {
+    width: 300px;
+    border: 5px solid gray;
 }
 
 .footer {
