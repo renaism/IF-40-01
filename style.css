@@ -27,19 +27,48 @@ ul.header {
     background-color: limegreen;
 }
 
+ul.header a:hover {
+    text-decoration: none;
+}
+
 li.header {
     float: left;
 }
 
-li.header a {
+li.header a, .dropBtn {
     display: inline-block;
     font-size: 24px;
     padding: 8px 20px;
 }
 
-li.header a:hover {
+li.header a:hover, .dropDown:hover, .dropBtn:hover {
     background-color: darkgreen;
-    text-decoration: none;
+}
+
+li.dropDown {
+    display: inline-block;
+    float: left;
+}
+
+.dropDown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width:105px;
+}
+
+.dropDown-content a:hover {
+    background-color: black;
+}
+
+.dropDown-content a {
+    padding: 8px 20px;
+    display: block;
+    text-align: center;
+}
+
+.dropDown:hover .dropDown-content {
+    display: block;
 }
 
 img.header {
@@ -97,4 +126,33 @@ table.dataMahasiswa {
     text-align: left;
     border-collapse: separate;
     border-spacing: 25px 0px;
+}
+
+.materiList {
+	border-collapse: separate;
+	border-spacing: 25px 50px;
+}
+
+.materiList tr: first-child {
+	
+}
+
+.materiList img {
+	width: 90px;
+	padding-right: 50px;
+	
+}
+
+.footer {
+    display: inline-block;
+    float: left;
+    max-width: 200px;
+    font-size: 12px;
+    padding:10px 100px 0px 0px;
+}
+
+.centerFlex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
